@@ -1,0 +1,199 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: lightblue;
+    width: 100%;
+    height: 100vh;
+    
+    display: flex;
+  
+    background-image: url('clouds-black-white-floral-wallpaper\ \(1\).jpg');
+}
+.card{
+    
+    background-color: rgba(0, 0, 0, 0.6); 
+    width:50vw;
+    margin: auto;
+    height: 100vh;
+    border-radius: 30px;
+    z-index: 20;
+    opacity: 10;
+min-width: 80vw;
+    
+    
+
+}
+.card h2{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 30px;
+    color:white;
+}
+.card-header {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    max-width: 80%;
+    min-width: 80%;
+}
+.card-header input{
+    width: 70%;
+    background-color: darkgray;
+    color: white;
+    height: 45px;
+    outline: none;
+    font-size: 21px;
+    border-radius: 10px;
+    border:2px solid white;
+
+
+    
+}
+input:hover{
+    cursor: pointer;
+    color:black;
+    transition: 0.3s ease;
+    border:2px solid black
+}
+.card-header button{
+    width: 20%;
+    background-color: blue;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid white;
+}
+button:hover{
+    color:white;
+    transition: 0.3s ease;
+}
+.pic-section{
+ width:50%;
+ margin: auto;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+}
+.pic-section h3{
+    color:white;
+    font-size: 40px;
+    text-align: center;
+
+}
+.pic-section img{
+    width:250px;
+    margin-top: 30px;
+}
+.extra-container{
+   width:70%;
+
+   margin: auto;
+  margin-top: 40px;
+   display: flex;
+  justify-content: space-around;
+   align-items: center;
+   background: white;
+   height: max-content;
+   border-radius: 20px;
+
+}
+.extra-container span{
+    color: black;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: bolder;
+
+}
+.wind,.humidi{
+    display: flex;
+    align-items: center;
+}
+
+.mini-card{
+    
+    width:40%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 35px;
+   
+
+}
+.card-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+.card-left span{
+    font-size: 30px;
+    font-weight: bolder;
+    
+
+}
+.mini-card{
+    display: none;
+}
+
+@media only screen and  (max-width:500px){
+
+    .card h2{
+        margin-top: 30px;
+    }
+    .card{
+        box-shadow: 10px 10px 10px 10px rgba(255, 255, 255, 0.24);
+       min-width: 90vw;
+        height: 70vh;
+    }
+    .pic-section h3{
+        font-size: 25px;
+    }
+    .extra-container span{
+        font-size: 20px;
+
+    }
+    .extra-container{
+        flex-direction: column;
+    }
+    .extra-container img{
+        width: 50px;
+    }
+      .pic-section img{
+        width: 150px;
+      }
+}
+@media only screen and (min-width: 700px) and (max-width: 1300px) {
+    .card {
+        min-width: 70vw;
+        height: 100vh;
+    }
+    .card-header{
+        margin-top:15px;
+
+    }
+    .mini-card{
+        margin-top: 10px;
+    }
+    .pic-section{
+        margin-top: 5px;
+    }
+    .extra-container{
+        margin-top: 10px;
+        flex-direction: column;
+    }
+    .extra-container span{
+        font-size: 20px;
+
+    }
+
+
+}
