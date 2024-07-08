@@ -15,13 +15,13 @@ body{
 .card{
     
     background-color: rgba(0, 0, 0, 0.6); 
-    width:50vw;
+    width:40vw;
+    height:90vh ;
     margin: auto;
-    height: 100vh;
+   
     border-radius: 30px;
     z-index: 20;
     opacity: 10;
-min-width: 80vw;
     
     
 
@@ -37,7 +37,7 @@ min-width: 80vw;
     margin: auto;
     display: flex;
     justify-content: space-between;
-    margin-top: 30px;
+    margin-top: 20px;
     max-width: 80%;
     min-width: 80%;
 }
@@ -78,6 +78,7 @@ button:hover{
  flex-direction: column;
  align-items: center;
  justify-content: center;
+ margin-top: 10px;
 }
 .pic-section h3{
     color:white;
@@ -87,14 +88,15 @@ button:hover{
 }
 .pic-section img{
     width:250px;
-    margin-top: 30px;
+    
 }
 .extra-container{
-   width:70%;
+   width:fit-content;
 
    margin: auto;
-  margin-top: 40px;
+  margin-top: 25px;
    display: flex;
+   
   justify-content: space-around;
    align-items: center;
    background: white;
@@ -104,7 +106,7 @@ button:hover{
 }
 .extra-container span{
     color: black;
-    font-size: 30px;
+    font-size:24px;
     font-family: sans-serif;
     font-weight: bolder;
 
@@ -123,7 +125,7 @@ button:hover{
     justify-content: center;
     background-color: white;
     border-radius: 20px;
-    margin-top: 35px;
+    margin-top: 25px;
    
 
 }
@@ -149,6 +151,9 @@ button:hover{
     .card h2{
         margin-top: 30px;
     }
+    input{
+        font-size:17px;
+    }
     .card{
         box-shadow: 10px 10px 10px 10px rgba(255, 255, 255, 0.24);
        min-width: 90vw;
@@ -170,10 +175,14 @@ button:hover{
       .pic-section img{
         width: 150px;
       }
+      .mini-card{
+        width: max-content;
+      }
 }
 @media only screen and (min-width: 700px) and (max-width: 1300px) {
     .card {
-        min-width: 70vw;
+        width:50vw;
+        
         height: 100vh;
     }
     .card-header{
@@ -193,7 +202,18 @@ button:hover{
     .extra-container span{
         font-size: 20px;
 
+    }}
+    @media only screen and (min-width: 500px) and (max-width: 700px){
+    .card {
+        width:70vw;
+        
+        height: 100vh;
     }
-
+    .mini-card{
+        width: fit-content;
+    }
+    .extra-container{
+        flex-direction: column;
+    }
 
 }
